@@ -20,7 +20,10 @@
     </div>
     <div class="row p-1">
         <div class="col-6">
-            <ul id="messagesList"></ul>
+            <div id="messagesContainer" class="border rounded p-2" style="height: 300px; overflow-y: auto;">
+                <ul id="messagesList" class="list-unstyled"></ul>
+            </div>
+            <div id="typingNotification" class="text-muted"></div>
         </div>
     </div>
 </div>

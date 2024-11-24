@@ -8,5 +8,9 @@ namespace SignalRChat.Hubs
 		{
 			await Clients.All.SendAsync("ReceiveMessage", user, message);
 		}
+		public async Task NotifyTyping(string user)
+		{
+			await Clients.Others.SendAsync("UserTyping", user);
+		}
 	}
 }
